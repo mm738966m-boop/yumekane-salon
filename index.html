@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ユメカネサロン｜無料で学べるお金のオープンチャット</title>
+<meta name="description" content="毎朝の経済ニュース、お金のプロの一言、月1回の30分プチ勉強会。お金と前向きに向き合う仲間が集まる、無料のLINEオープンチャットです。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ユメカネサロン｜無料で学べるお金のオープンチャット">
+<meta property="og:description" content="毎朝の経済ニュースと、月1回の30分プチ勉強会。お金と前向きに向き合う仲間が集まる無料のコミュニティです。">
+<meta property="og:url" content="https://mm738966m-boop.github.io/yumekane-salon/">
+<meta property="og:image" content="https://mm738966m-boop.github.io/yumekane-salon/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="ユメカネサロン">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#FFFFFF;
+  --panel:#F1F7F6;
+  --ink:#22403C;
+  --muted:#5E7370;
+  --teal:#0E7570;
+  --teal-deep:#0A5652;
+  --teal-soft:#DCEEEB;
+  --line:#DCE7E5;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Noto Sans JP","Hiragino Sans",sans-serif;
+  font-size:16px;
+  line-height:2;
+  font-feature-settings:"palt";
+}
+h1,h2,h3{font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;line-height:1.5;}
+.hero{position:relative;background:var(--teal-soft);}
+.hero img{width:100%;display:block;}
+.hero-body{max-width:640px;margin:0 auto;padding:2rem 1.4rem 2.6rem;text-align:center;}
+.badge{display:inline-block;background:var(--teal);color:var(--white);font-weight:700;font-size:.85rem;border-radius:999px;padding:.15rem 1.1em;letter-spacing:.1em;}
+h1{font-size:1.7rem;margin:.7rem 0 .4rem;color:var(--teal-deep);}
+.lede{margin:0 auto;color:var(--muted);}
+main{max-width:640px;margin:0 auto;padding:0 1.4rem 4rem;}
+section{margin-top:3.6rem;}
+h2{font-size:1.3rem;color:var(--teal-deep);text-align:center;margin:0 0 1.4rem;}
+h2 .en{display:block;font-size:.7rem;color:var(--teal);letter-spacing:.25em;font-family:"Noto Sans JP",sans-serif;}
+p{margin:.4rem 0;}
+.cards{display:flex;flex-direction:column;gap:1rem;}
+.card{background:var(--panel);border-radius:14px;padding:1.2rem 1.4rem;}
+.card h3{margin:0 0 .3rem;font-size:1.05rem;color:var(--teal-deep);}
+.card .when{display:inline-block;background:var(--white);color:var(--teal);font-size:.78rem;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:0 .9em;margin-bottom:.5rem;}
+.card p{margin:0;font-size:.95rem;color:var(--muted);}
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:.9rem;padding:0;margin:0;list-style:none;}
+.steps li{counter-increment:step;display:flex;gap:1rem;align-items:baseline;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.2rem;}
+.steps li::before{content:counter(step);flex:none;width:1.9em;height:1.9em;border-radius:50%;background:var(--teal);color:var(--white);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.9rem;line-height:1;position:relative;top:.2em;}
+.promise{background:var(--panel);border-radius:14px;padding:1.4rem 1.6rem;}
+.promise ul{margin:0;padding-left:1.2em;}
+.promise li{margin:.4rem 0;}
+.host{display:flex;flex-direction:column;gap:.4rem;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.6rem;}
+.host .name{font-weight:700;font-size:1.1rem;color:var(--teal-deep);}
+.host p{font-size:.95rem;color:var(--muted);margin:0;}
+.cta{display:block;background:var(--teal);color:var(--white);text-decoration:none;text-align:center;font-weight:700;font-size:1.1rem;border-radius:999px;padding:1rem 1.5rem;margin:2.2rem auto 0;max-width:420px;box-shadow:0 6px 18px rgba(14,117,112,.28);}
+.cta:active{transform:translateY(1px);}
+.cta small{display:block;font-weight:500;font-size:.78rem;opacity:.9;}
+.cta-note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:.7rem;}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;text-align:center;padding:1.6rem 1rem 2.4rem;}
+footer a{color:var(--muted);}
+@media(min-width:641px){
+  h1{font-size:2rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="hero.jpg" alt="ユメカネサロン - お金と前向きに向き合うコミュニティ">
+  <div class="hero-body">
+    <span class="badge">参加無料・出入り自由</span>
+    <h1>ユメカネサロン</h1>
+    <p class="lede">お金と前向きに向き合いながら、自分らしい未来を育てていく。<br>
+    そんな仲間が集まる、無料のLINEオープンチャットです。</p>
+    <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
+  </div>
+</div>
+
+<main>
+
+<section>
+  <h2><span class="en">WHAT YOU GET</span>サロンに届くもの</h2>
+  <div class="cards">
+    <div class="card">
+      <span class="when">毎朝 7:30</span>
+      <h3>ユメカネくんの朝便り</h3>
+      <p>その日の為替と経済ニュースを、やさしい言葉でお届けします。
+通勤時間の3分で、お金の世界の「今」がわかります。</p>
+    </div>
+    <div class="card">
+      <span class="when">毎週</span>
+      <h3>お金のプロの一言と「今週の一歩」</h3>
+      <p>相談2,000件のお金のプロ・森川から、週に一度のメッセージ。
+みんなの小さな一歩をシェアしあう時間もあります。</p>
+    </div>
+    <div class="card">
+      <span class="when">毎月1回</span>
+      <h3>30分プチ勉強会（無料）</h3>
+      <p>新NISAなど、いま気になるテーマを30分だけ一緒に学びます。
+顔出しなしで、聞くだけの参加も大丈夫です。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="en">HOW TO JOIN</span>参加の流れ</h2>
+  <ol class="steps">
+    <li>下のボタンを押すと、LINEのオープンチャットが開きます。</li>
+    <li>「参加」を押して、かんたんな質問にひとつ答えます。</li>
+    <li>ニックネームで参加できます。本名は不要です。</li>
+  </ol>
+</section>
+
+<section>
+  <h2><span class="en">OUR PROMISE</span>安心して過ごすための約束</h2>
+  <div class="promise">
+    <ul>
+      <li>参加は無料です。退会もいつでも自由です。</li>
+      <li>ニックネームでの参加OK。発言せず読むだけでも大丈夫です。</li>
+      <li>宣伝・勧誘・営業行為は禁止です。</li>
+      <li>特定の商品や銘柄をおすすめすることはありません。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="en">HOST</span>運営しているのは</h2>
+  <div class="host">
+    <span class="name">森川 満章（もりかわ みちあき）</span>
+    <p>fulfull株式会社 代表。お金のプロとして、これまで2,000件以上の相談を受けてきました。
+セミナーは累計200回以上、のべ6,500名以上が参加。
+Voicy「ふるふるラジオ」でも毎日、お金との向き合い方を発信しています。</p>
+  </div>
+  <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
+  <p class="cta-note">1,000人の仲間と一緒に、お金と前向きに向き合っていきましょう。</p>
+</section>
+
+</main>
+
+<footer>
+  ユメカネサロン｜運営: fulfull株式会社<br>
+  <a href="https://yumekane-salon.com/">学びコンテンツはこちら（ユメカネサロン公式サイト）</a>
+</footer>
+
+</body>
+</html>
