@@ -80,6 +80,17 @@ p{margin:.4rem 0;}
 .chat-bubble{background:#FFFFFF;border-radius:4px 16px 16px 16px;padding:1rem 1.2rem;font-size:.88rem;line-height:1.85;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.06);}
 .chat-more{color:var(--teal);font-weight:700;}
 .chat-note{text-align:center;color:var(--muted);font-size:.88rem;margin-top:.9rem;}
+.card a{color:var(--teal);font-weight:700;}
+.steps li b{color:var(--teal-deep);margin-right:.3em;}
+.faq{display:flex;flex-direction:column;gap:.9rem;}
+.qa{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:1rem 1.3rem;}
+.qa .q{margin:0 0 .3rem;font-weight:700;color:var(--teal-deep);}
+.qa .q::before{content:"Q. ";color:var(--teal);}
+.qa .a{margin:0;font-size:.95rem;color:var(--muted);}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);border-top:1px solid var(--line);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));display:none;transform:translateY(110%);transition:transform .3s ease;}
+.stickybar.show{transform:translateY(0);}
+.stickybar a{display:block;background:var(--teal);color:var(--white);text-decoration:none;text-align:center;font-weight:700;border-radius:999px;padding:.75rem 1rem;font-size:1rem;box-shadow:0 4px 12px rgba(14,117,112,.25);}
+@media(max-width:640px){.stickybar{display:block;}}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;text-align:center;padding:1.6rem 1rem 2.4rem;}
 footer a{color:var(--muted);}
 @media(min-width:641px){
@@ -97,7 +108,9 @@ footer a{color:var(--muted);}
     <p class="lede">新NISA、家計、これからのお金。<br>
     「何から始めればいいかわからない」の一歩目が、<br>
     毎朝3分のニュースと無料の勉強会で見つかる町です。</p>
-    <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
+    <a class="cta" id="hero-cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">まずは無料でのぞいてみる<small>LINEオープンチャットが開きます</small></a>
+    <p class="cta-note">登録・費用は一切なし。
+ニックネームのままでOKです。</p>
     <div class="proof">
       <div><b>2,000件+</b><span>お金の相談実績</span></div>
       <div><b>6,500名+</b><span>セミナー参加者</span></div>
@@ -164,11 +177,21 @@ footer a{color:var(--muted);}
 </section>
 
 <section>
-  <h2><span class="en">HOW TO JOIN</span>参加の流れ</h2>
+  <h2><span class="en">HOW TO JOIN</span>参加の流れ（30秒で完了）</h2>
   <ol class="steps">
-    <li>下のボタンを押すと、LINEのオープンチャットが開きます。</li>
-    <li>「参加」を押して、かんたんな質問にひとつ答えます。</li>
-    <li>ニックネームで参加できます。本名は不要です。</li>
+    <li>ボタンを押すと、LINEのオープンチャットが開きます。</li>
+    <li>「参加」を押して、質問にひとつ答えます。
+（「どこでサロンを知りましたか？」だけ。名前や連絡先の入力はありません）</li>
+    <li>ニックネームとアイコンを選んで、完了です。</li>
+  </ol>
+</section>
+
+<section>
+  <h2><span class="en">YOUR FIRST DAYS</span>参加すると、まずこうなります</h2>
+  <ol class="steps">
+    <li><b>参加した瞬間</b>　町のこれまでのやり取りと、今週の話題をのぞけます。</li>
+    <li><b>翌朝7:30</b>　あなたの最初の「朝便り」が届きます。</li>
+    <li><b>その週のうちに</b>　夜イベントやプチ勉強会の案内が流れてきます。</li>
   </ol>
 </section>
 
@@ -185,6 +208,28 @@ footer a{color:var(--muted);}
 </section>
 
 <section>
+  <h2><span class="en">FAQ</span>よくある質問</h2>
+  <div class="faq">
+    <div class="qa">
+      <p class="q">普段のLINEの友だちに、参加していることは知られますか？</p>
+      <p class="a">オープンチャットは、普段のLINEとは別のニックネーム・アイコンで参加する仕組みです。
+友だちリストや通知には表示されません。</p>
+    </div>
+    <div class="qa">
+      <p class="q">発言しないとだめですか？</p>
+      <p class="a">読むだけの参加で大丈夫です。
+自己紹介も任意です。</p>
+    </div>
+    <div class="qa">
+      <p class="q">あとから売り込まれませんか？</p>
+      <p class="a">個別のセールスはありません。
+届くのは、朝便りとイベントの案内だけです。</p>
+    </div>
+  </div>
+  <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
+</section>
+
+<section>
   <h2><span class="en">HOST</span>運営しているのは</h2>
   <div class="host">
     <span class="name">森川 満章（もりかわ みちあき）</span>
@@ -193,7 +238,8 @@ footer a{color:var(--muted);}
 Voicy「ふるふるラジオ」でも毎日、お金との向き合い方を発信しています。</p>
   </div>
   <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
-  <p class="cta-note">1,000人の仲間と一緒に、お金と前向きに向き合っていきましょう。</p>
+  <p class="cta-note">匿名OK・費用はずっと無料。
+まずは読むだけの参加からで大丈夫です。</p>
 </section>
 
 </main>
@@ -202,6 +248,22 @@ Voicy「ふるふるラジオ」でも毎日、お金との向き合い方を発
   ユメカネサロン｜運営: fulfull株式会社<br>
   <a href="https://yumekane-salon.com/event">イベントの予定</a>｜<a href="https://yumekane-salon.com/">学びコンテンツ（公式サイト）</a>
 </footer>
+
+<div class="stickybar" id="stickybar" aria-hidden="true">
+  <a href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する（ニックネームOK）</a>
+</div>
+<script>
+(function () {
+  var hero = document.getElementById('hero-cta');
+  var bar = document.getElementById('stickybar');
+  if (!hero || !bar || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0);
+    });
+  }).observe(hero);
+})();
+</script>
 
 </body>
 </html>
