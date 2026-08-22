@@ -61,9 +61,17 @@ p{margin:.4rem 0;}
 .promise{background:var(--panel);border-radius:14px;padding:1.4rem 1.6rem;}
 .promise ul{margin:0;padding-left:1.2em;}
 .promise li{margin:.4rem 0;}
-.host{display:flex;flex-direction:column;gap:.4rem;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.6rem;}
+.host{display:flex;gap:1.3rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.6rem;}
+.host-photo{width:170px;border-radius:12px;flex:none;}
+.host-body{display:flex;flex-direction:column;gap:.4rem;}
 .host .name{font-weight:700;font-size:1.1rem;color:var(--teal-deep);}
 .host p{font-size:.95rem;color:var(--muted);margin:0;}
+@media(max-width:560px){.host{flex-direction:column;align-items:center;text-align:left;}.host-photo{width:70%;max-width:260px;}}
+.goal{max-width:420px;margin:1.4rem auto 0;}
+.goal-track{height:8px;border-radius:999px;background:var(--white);border:1px solid var(--line);overflow:hidden;}
+.goal-fill{height:100%;background:var(--teal);border-radius:999px;}
+.goal-text{font-size:.85rem;color:var(--muted);margin:.6rem 0 0;line-height:1.9;}
+.goal-text b{color:var(--teal-deep);font-family:"Zen Maru Gothic",sans-serif;}
 .cta{display:block;background:var(--teal);color:var(--white);text-decoration:none;text-align:center;font-weight:700;font-size:1.1rem;border-radius:999px;padding:1rem 1.5rem;margin:2.2rem auto 0;max-width:420px;box-shadow:0 6px 18px rgba(14,117,112,.28);}
 .cta:active{transform:translateY(1px);}
 .cta small{display:block;font-weight:500;font-size:.78rem;opacity:.9;}
@@ -115,6 +123,11 @@ footer a{color:var(--muted);}
       <div><b>2,000件+</b><span>お金の相談実績</span></div>
       <div><b>6,500名+</b><span>セミナー参加者</span></div>
       <div><b>200回+</b><span>セミナー開催</span></div>
+    </div>
+    <div class="goal">
+      <div class="goal-track"><div class="goal-fill" style="width:5.7%"></div></div>
+      <p class="goal-text">いま<b>57人</b>。1,000人の町を、最初の仲間から育てています。<br>
+次に入るあなたは、<b>58番目</b>の住人です。</p>
     </div>
   </div>
 </div>
@@ -232,10 +245,13 @@ footer a{color:var(--muted);}
 <section>
   <h2><span class="en">HOST</span>運営しているのは</h2>
   <div class="host">
-    <span class="name">森川 満章（もりかわ みちあき）</span>
-    <p>fulfull株式会社 代表。お金のプロとして、これまで2,000件以上の相談を受けてきました。
+    <img src="morikawa.jpg" alt="セミナーで話す森川満章" class="host-photo">
+    <div class="host-body">
+      <span class="name">森川 満章（もりかわ みちあき）</span>
+      <p>fulfull株式会社 代表。お金のプロとして、これまで2,000件以上の相談を受けてきました。
 セミナーは累計200回以上、のべ6,500名以上が参加。
 Voicy「ふるふるラジオ」でも毎日、お金との向き合い方を発信しています。</p>
+    </div>
   </div>
   <a class="cta" href="https://line.me/ti/g2/sn8DRIkFRU2tPxzmUQ0ZHq5kn9RtTGrYlJhFfw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">無料で参加する<small>LINEオープンチャットが開きます</small></a>
   <p class="cta-note">匿名OK・費用はずっと無料。
